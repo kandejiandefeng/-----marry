@@ -15,17 +15,13 @@ function oscroll(){
         }
     };
 };
-
-// $(document).ready(function(){
-//     $('li#other').click(function(){
-//         $('div#other_sub').show();
-//     });
-//     // var oth=document.getElementById('other');
-//     // var oth_sub=document.getElementById('other_sub');
-//     // oth.click=function(){
-//     //     oth_sub.style.display = 'block';
-//     // }
-// });
+function others(){
+    var oth=document.getElementById('other');
+    var oth_sub=document.getElementsByClassName('other_sub');
+    oth.click=function(){
+        oth_sub.style.display = 'block';
+    }
+};
 
 var myVideo=document.getElementById("video1"); 
 
