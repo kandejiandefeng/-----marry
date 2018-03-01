@@ -5,172 +5,166 @@
 	<title>modao</title>
 	<link rel="stylesheet" href="css/index.css" type="text/css">
   
+    <script src="./js/jquery-3.3.1.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="./js/index.js"></script>
 
 </head>
 <body>
-	<div class="main">
-		<!--<div style="position: fixed;top:0;width: 1200px;">-->
-			<div class="header">
-				<div class="user">
-					<div class="user-pic">
-						<img src="img/1.png" alt="">
-				    </div>
-					<div class="use-des">
-					   <span class="user-name">策划师 王广</span><br>
-					   <span class="user-spe">童话盛宴婚礼</span>
-					</div>
-				</div>
-				<div class="nav">
-					<a href="" class="nav-on">合作伙伴</a>
-					<span></span>
-					<a href="">热门推荐</a>
-					<div class="serch">档期搜索</div>
-					<form action="">
-						<input class="inname" type="text" placeholder="输入 名字或者团队">
-						<input type="submit" value="搜索">
-					</form>
-				</div>
-			</div>
-			<div class="subnav" id="subnav">
-				<ul>
-					<a href="" ><li class="on">主持人
-						<div class="content"></div>
-					</li></a>
-					<a href=""><li>摄影师
-						<div class="content"></div>
-					</li></a>
-					<a href=""><li>化妆师
-						<div class="content"></div>
-					</li></a>
-					<a href=""><li>摄像师
-						<div class="content"></div>
-					</li></a>
-					<a href="javascript:;"><li id="other">其他
-					    <i class="o-direction"></i>
-						<div class="content"></div>
-					</li></a>
-				</ul>
-				<div class="rang">
-					<i class="r-direction"></i>
-					<span>自定义排序</span>
-				</div>
-			</div>
-	    <!--</div>-->
-	    <div id="other_sub">
-	    	<ul>
-	    		<li><a href="">督导师</a></li>
-	    		<li><a href="">花艺师</a></li>
-	    		<li><a href="">灯光师</a></li>
-	    		<li><a href="">场布</a></li>
-	    		<li><a href="">车队</a></li>
-	    		<li><a href="">设计师</a></li>
-	    		<li><a href="">婚纱</a></li>
-	    		<li><a href="">歌手</a></li>
-	    		<li><a href="">乐器</a></li>
-	    		<li><a href="">舞蹈</a></li>
-	    		<li><a href="">杂技</a></li>
-	    		<li><a href="">魔术</a></li>
-	    		<li><a href="">演员</a></li>
-	    		<li><a href="">音响师</a></li>
-	    		<li><a href="">喜娘</a></li>
-	    		<li><a href="">大屏</a></li>
-	    	</ul>
-		    	<div class="personal-f"></div>
+<div class="header">
+	<div class="header-con">
+	<div class="user">
+		<div class="user-pic">
+			<img src="img/1.png" alt="">
 	    </div>
-	    <div class="person">
-	    	<div class="personal">
-	    		<img src="img/1.png" alt="">
-	    		<span>王广</span>
-	    	</div>
-	    	<div class="personal">
-	    		<img src="img/1.png" alt="">
-	    		<span>王广</span>
-	    		<span class="mony">1980元</span>
-	    	</div>
-	    	<div class="personal">
-	    		<img src="img/1.png" alt="">
-	    		<span>王广</span>
-	    	</div>
-	    	<div class="personal">
-	    		<img src="img/1.png" alt="">
-	    		<span>王广</span>
-	    		<span class="mony">1980元</span>
-	    	</div>
-	    	<div class="personal">
-	    		<img src="img/1.png" alt="">
-	    		<span>王广</span>
-	    	</div>
-	    	<div class="personal">
-	    		<img src="img/1.png" alt="">
-	    		<span>王广</span>
-	    		<span class="mony">1980元</span>
-	    	</div>
-	    	<div class="personal">
-	    		<img src="img/1.png" alt="">
-	    		<span>王广</span>
-	    	</div>
-	    	<div class="personal">
-	    		<img src="img/1.png" alt="">
-	    		<span>王广</span>
-	    		<span class="mony">1980元</span>
-	    	</div>
-	    	<div class="personal">
-	    		<img src="img/1.png" alt="">
-	    		<span>王广</span>
-	    	</div>
-	    	<div class="personal">
-	    		<img src="img/1.png" alt="">
-	    		<span>王广</span>
-	    		<span class="mony">1980元</span>
-	    	</div>
-	    	<div class="personal">
-	    		<img src="img/1.png" alt="">
-	    		<span>王广</span>
-	    	</div>
-	    	<div class="personal">
-	    		<img src="img/1.png" alt="">
-	    		<span>王广</span>
-	    		<span class="mony">1980元</span>
-	    	</div>
-	    	<div class="personal-f"></div>
-	    </div>
-	    <div class="team">
-	    	<div class="team-sim">
-	    		<div class="team-pic">
-		    		<img src="img/2.png" alt="">
-	    	    </div>
-	    		<span>麦客家族主持团队</span>
-	    	</div>
-	    	<div class="personal-f"></div>
-	    </div>
-	    <div>
-	    	<div class="subtit">
-	    		<span class="renew">伙伴作品更新</span>
-	    		<div class="all">
-		    		<span>查看全部</span>
-				    <i class="all-direction"></i>
-			    </div>
-
-	    	</div>
-	    	<div class="show">
-	    		<div class="show-per">
-	    			<div class="show-per-v">
-	    			<video width="285" height="190" id="video1">
-	                    <source src="img/mov_bbb.mp4" type="video/mp4">
-	                    <source src="movie.ogg" type="video/ogg">
-                    </video></div>
-                    <div class="show-user">
-	                    <div class="show-user-pic">
-			    		    <img src="img/3.png" alt="">
-		    		    </div>
-		    			<span>主持人 王广</span>
-	    		    </div>
-	    		</div>
-		    	<div class="personal-f"></div>
-	    	</div>
-	    </div>
+		<div class="use-des">
+		   <span class="user-name">策划师 王广</span><br>
+		   <span class="user-spe">童话盛宴婚礼</span>
+		</div>
 	</div>
-<script type="text/javascript" src="js/index.js"></script>
+	<div class="nav">
+		<a href="" class="nav-on">合作伙伴</a>
+		<span></span>
+		<a href="">热门推荐</a>
+		<div class="serch">档期搜索</div>
+		<form action="">
+			<input class="inname" type="text" placeholder="输入 名字或者团队">
+			<div class="inname-serch">搜索</div>
+		</form>
+	</div>
+</div>
+</div>
+<div class="main">
+		<div class="subnav" id="subnav">
+			<ul class="bi-ul">
+				<a href="" ><li class="j-tips on">主持人
+				</li></a>
+				<a href=""><li class="j-tips">摄影师
+				</li></a>
+				<a href=""><li class="j-tips">化妆师
+				</li></a>
+				<a href=""><li class="j-tips">摄像师
+				</li></a>
+				<a href="javascript:;"><li class="other">其他
+				    <i class="o-direction"></i>
+					<div class="other_sub">
+		    	<ul class="sub-ul">
+		    		<li class="j-tips"><a href="">督导师</a></li>
+		    		<li  class="j-tips"><a href="">花艺师</a></li>
+		    		<li  class="j-tips"><a href="">灯光师</a></li>
+		    		<li  class="j-tips"><a href="">场布</a></li>
+		    		<li  class="j-tips"><a href="">车队</a></li>
+		    		<li  class="j-tips"><a href="">设计师</a></li>
+		    		<li  class="j-tips"><a href="">婚纱</a></li>
+		    		<li  class="j-tips"><a href="">歌手</a></li>
+		    		<li  class="j-tips"><a href="">乐器</a></li>
+		    		<li  class="j-tips"><a href="">舞蹈</a></li>
+		    		<li  class="j-tips"><a href="">杂技</a></li>
+		    		<li  class="j-tips"><a href="">魔术</a></li>
+		    		<li  class="j-tips"><a href="">演员</a></li>
+		    		<li  class="j-tips"><a href="">音响师</a></li>
+		    		<li  class="j-tips"><a href="">喜娘</a></li>
+		    		<li  class="j-tips"><a href="">大屏</a></li>
+		    	</ul>
+            </div>				</li></a>
+			</ul>
+			<div class="rang">
+				<i class="r-direction"></i>
+				<span>自定义排序</span>
+			</div>
+			
+		</div>
+    <!--</div>-->
+    
+    <div class="person">
+    	<div class="personal">
+    		<img src="img/1.png" alt="">
+    		<span>王广</span>
+    	</div>
+    	<div class="personal">
+    		<img src="img/1.png" alt="">
+    		<span>王广</span>
+    		<span class="mony">1980元</span>
+    	</div>
+    	<div class="personal">
+    		<img src="img/1.png" alt="">
+    		<span>王广</span>
+    	</div>
+    	<div class="personal">
+    		<img src="img/1.png" alt="">
+    		<span>王广</span>
+    		<span class="mony">1980元</span>
+    	</div>
+    	<div class="personal">
+    		<img src="img/1.png" alt="">
+    		<span>王广</span>
+    	</div>
+    	<div class="personal">
+    		<img src="img/1.png" alt="">
+    		<span>王广</span>
+    		<span class="mony">1980元</span>
+    	</div>
+    	<div class="personal">
+    		<img src="img/1.png" alt="">
+    		<span>王广</span>
+    	</div>
+    	<div class="personal">
+    		<img src="img/1.png" alt="">
+    		<span>王广</span>
+    		<span class="mony">1980元</span>
+    	</div>
+    	<div class="personal">
+    		<img src="img/1.png" alt="">
+    		<span>王广</span>
+    	</div>
+    	<div class="personal">
+    		<img src="img/1.png" alt="">
+    		<span>王广</span>
+    		<span class="mony">1980元</span>
+    	</div>
+    	<div class="personal">
+    		<img src="img/1.png" alt="">
+    		<span>王广</span>
+    	</div>
+    	<div class="personal">
+    		<img src="img/1.png" alt="">
+    		<span>王广</span>
+    		<span class="mony">1980元</span>
+    	</div>
+    </div>
+    <div class="team">
+    	<div class="team-sim">
+    		<div class="team-pic">
+	    		<img src="img/2.png" alt="">
+    	    </div>
+    		<span>麦客家族主持团队</span>
+    	</div>
+    </div>
+    <div>
+    	<div class="subtit">
+    		<span class="renew">伙伴作品更新</span>
+    		<div class="all">
+	    		<span>查看全部</span>
+			    <i class="all-direction"></i>
+		    </div>
+
+    	</div>
+    	<div class="show">
+    		<div class="show-per">
+    			<div class="show-per-v">
+    			<video width="285" height="190" id="video1">
+                    <source src="img/mov_bbb.mp4" type="video/mp4">
+                    <source src="movie.ogg" type="video/ogg">
+                </video></div>
+                <div class="show-user">
+                    <div class="show-user-pic">
+		    		    <img src="img/3.png" alt="">
+	    		    </div>
+	    			<span>主持人 王广</span>
+    		    </div>
+    		</div>
+    	</div>
+    </div>
+</div>
 
 </body>
 </html>
