@@ -313,6 +313,7 @@ a:active {
       height: 64px;
       line-height: 64px; }
       .main .subnav .bi-ul a {
+        color: #FB9CA5;
         font-size: 18px;
         text-decoration: none; }
         .main .subnav .bi-ul a li {
