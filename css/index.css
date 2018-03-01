@@ -349,9 +349,25 @@ a:active {
         width: 16px;
         height: 16px;
         background: url(../img/自定义排序.png); }
+      .main .subnav .rang .rang-tips {
+        width: 120px;
+        margin-left: 20px;
+        display: none;
+        background-color: gray;
+        opacity: .3; }
+        .main .subnav .rang .rang-tips .rang-tips-sin li {
+          display: inline-block;
+          width: 120px;
+          height: 33px;
+          text-align: center;
+          line-height: 33px; }
+          .main .subnav .rang .rang-tips .rang-tips-sin li a {
+            color: #FB9CA5; }
     .main .subnav .rang:after {
       content: '';
       clear: both; }
+    .main .subnav .rang:hover .rang-tips {
+      display: block; }
     .main .subnav .other {
       display: inline-block;
       width: 85px;

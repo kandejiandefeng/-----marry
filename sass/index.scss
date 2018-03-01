@@ -172,10 +172,32 @@
         height:16px;
         background: url(../img/自定义排序.png);
       }
+      .rang-tips{
+        width:120px;
+        margin-left:20px;
+        display:none;
+        background-color:gray;
+        opacity:.3;
+        .rang-tips-sin{
+          li{
+            display:inline-block;
+            width:120px;
+            height:33px;
+            text-align:center;
+            line-height:33px;
+            a{
+            color:#FB9CA5;    
+            }
+          }
+        }
+      }
     }
     .rang:after{
       content:'';
       clear:both;
+    }
+    .rang:hover .rang-tips{
+      display:block;
     }
     .other{
       display:inline-block;
