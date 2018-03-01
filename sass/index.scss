@@ -83,20 +83,24 @@
       font-size: 20px;
       border-radius: 4px;
     }
-    form{
+    .serch-in{
       display: inline-block;
       width:405px;
       height:40px;
+      border: 1px solid #F83244;
       margin-left: 60px;
+      border-radius:4px;
+        overflow:hidden;
       position: relative;
       .inname{
-        width: 405px;
+        width: 365px;
         height: 40px;
+        overflow:hidden;
+        padding-left:15px;
       }
       .inname-serch{
         height: 40px;
         width: 80px;
-        border-radius: 4px;
         background: #F83244;
         color:#FFFFFF;
         font-size:18px;
@@ -115,9 +119,8 @@
   width:1200px;
   margin:0 auto;
   background-color: #FFFFFF;
-  .on{
-          background-color: #F83244;
-        }
+  
+
   .subnav{
     width: 1200px;
     height: 64px;
@@ -127,33 +130,45 @@
       width:700px ;
       height: 64px;
       line-height: 64px;
-      a{
-          color: #FB9CA5;
-          
+      li{
+            display: inline-block;
+          width:85px;
+          height:33px;
           font-size:18px;
           text-decoration: none;
-          li{
-            width:85px;
-            height:33px;
-            display: inline-block;
+          margin-left: 30px;
+          line-height:33px;
+          text-align:center;
+          border-radius:25px;
+          a{
+            display:inline-block;
+            width:100%;
+            height:100%;
+            border-radius:25px;
             text-decoration: none;
             list-style-type: none;
-            line-height:33px;
-            text-align:center;
-            margin-left: 30px;
-            border-radius:25px;
-            color:#FB9CA5;    
+            color:#333;
         }
-        .j-tips:hover{
-            background-color:#F83244;
+        &.on{
+          background-color: #F83244;
+          a {color:#FB9CA5; }   
+        }
+        &.j-tips:hover{
+          a{
+          background-color:#F83244;
+          color:#FB9CA5;
         }
       }
+      
       .o-direction{
         display:inline-block;
         width:10px;
         height:10px;
         background-image: url(../img/其他-1.png);
       }
+    }
+      
+      
     }
     
     .rang{
@@ -176,17 +191,19 @@
         width:120px;
         margin-left:20px;
         display:none;
-        background-color:gray;
-        opacity:.3;
+        background-color:#fff;
+        border:1px solid #B4B7BA;
+        border-top:0px;
         .rang-tips-sin{
           li{
-            display:inline-block;
+            display:block;
             width:120px;
-            height:33px;
+            height:35px;
             text-align:center;
-            line-height:33px;
+            line-height:35px;
             a{
-            color:#FB9CA5;    
+              display:inline-block;
+            color: #B4B7BA;    
             }
           }
         }
@@ -202,52 +219,74 @@
     .other{
       display:inline-block;
       width:85px;
-      height:64px;
+      height:64px !important;
       display: inline-block;
       text-decoration: none;
       list-style-type: none;
-      line-height:33px;
       text-align:center;
       margin-left: 30px;
       border-radius:25px;
+      a{
+      color:#333;
+      }
+    }
+    .other:hover{
       color:#FB9CA5;
     }
     .other:hover .other_sub{
       display:block;
       z-index:6666px;
     }
-   .other_sub{
-      width:1050px;
+    .other-s{
+      width:1200px;
       margin-top:64px;
+      background-color:#fff;
       position:absolute;
-      overflow:hidden;
       top:0;
       left:0;
+      .other_sub{
+      width:1050px;
+      overflow:hidden;
+      
       display:none;
-      .sub-ul{
-      width:100%;
-      height: 64px;
-      text-align:left;
-      li{
-        width:84px;
-        height:32px;
-        display: inline-block;
-        border-radius:25px;
-        text-decoration: none;
-        list-style-type: none;
-        margin-right:15px;
-        line-height:32px;
-        text-align:center;
-        a{
-          width:84px;
-          height:32px;
-          font-size:15px;
-          text-decoration: none;
-          color:#FB9CA5;
+      padding:10px 0 10px 0;
+        .sub-ul{
+          width:100%;
+          text-align:left;
+          li{
+            width:84px;
+            height:32px;
+            display: inline-block;
+            border-radius:25px;
+            text-decoration: none;
+            list-style-type: none;
+            border:1px solid #CCCCCC;
+            margin:5px 7px  5px 7px;
+            text-align:center;
+            overflow:hidden;
+            font-size:0;
+            a{
+              width:84px;
+              height:32px;
+              font-size:15px;
+              line-height:32px;
+              display:inline-block;
+              text-decoration: none;
+              color:#333;
+            }
+          }
+        .j-tips:hover{
+          a{
+            background-color:#F83244;
+            color:#FB9CA5;
+            }    
         }
-      }
-      .j-tips:hover{background-color:#F83244;}
-    } 
+        .on{
+          background-color: #F83244;
+           a{ color:#FB9CA5;}    
+        }
+      } 
+    }
   }
  
   }
@@ -255,26 +294,29 @@
     padding:0 4px 35px 4px;
     border-bottom: 1px solid #E8E8E8;
     overflow:hidden;
-    .personal{
-      width: 95px;
-      float: left;
-      margin: 35px 26px 0 26px;
-      text-align:center;
-      img{
-        width:90px;
-        height: 90px;
-        border-radius: 50%;
-      }
-      span{
-        display: inline-block;
-        color:#333333;
-        font-size:20px;
-        font-weight: bold;
-        margin-top: 20px;
-      }
-      .mony{
-        color: #666666;
-        font-size: 14px;
+      .personal{
+        width: 95px;
+        float: left;
+        margin: 35px 26px 0 26px;
+        text-align:center;
+        a{
+          display:inline-block;
+
+        img{
+          width:90px;
+          height: 90px;
+          border-radius: 50%;
+        }
+        span{
+          display: inline-block;
+          color:#333333;
+          font-size:20px;
+          margin-top: 20px;
+        }
+        .mony{
+          color: #666666;
+          font-size: 14px;
+        }
       }
     }
   }
@@ -286,6 +328,8 @@
       width: 160px;
       margin:35px 47px 0 35px;
       text-align:center;
+      a{
+      display:inline-block;
       .team-pic{
         width:120px;
         height:120px;
@@ -301,9 +345,9 @@
         color: black;
         font-size:20px;
         color:#333333;
-        font-weight: bold;
         margin-top: 20px;
       }
+    }
     }
   }
   .subtit{
@@ -338,6 +382,8 @@
     .show-per{
       //margin-left: 20px;
       margin:35px 20px 0 0;
+      a{
+        display:inline-block;
       .show-per-v{
           width:285px;
           height:190px;
@@ -365,10 +411,10 @@
           margin-top:19px;
         }
       }
-      
+      }
     }
   }
-  .personal-f{clear:both;}
+  
 }
 
 

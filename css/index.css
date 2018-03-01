@@ -275,19 +275,23 @@ a:active {
         line-height: 40px;
         font-size: 20px;
         border-radius: 4px; }
-      .header .header-con .nav form {
+      .header .header-con .nav .serch-in {
         display: inline-block;
         width: 405px;
         height: 40px;
+        border: 1px solid #F83244;
         margin-left: 60px;
+        border-radius: 4px;
+        overflow: hidden;
         position: relative; }
-        .header .header-con .nav form .inname {
-          width: 405px;
-          height: 40px; }
-        .header .header-con .nav form .inname-serch {
+        .header .header-con .nav .serch-in .inname {
+          width: 365px;
+          height: 40px;
+          overflow: hidden;
+          padding-left: 15px; }
+        .header .header-con .nav .serch-in .inname-serch {
           height: 40px;
           width: 80px;
-          border-radius: 4px;
           background: #F83244;
           color: #FFFFFF;
           font-size: 18px;
@@ -301,8 +305,6 @@ a:active {
   width: 1200px;
   margin: 0 auto;
   background-color: #FFFFFF; }
-  .main .on {
-    background-color: #F83244; }
   .main .subnav {
     width: 1200px;
     height: 64px;
@@ -312,28 +314,36 @@ a:active {
       width: 700px;
       height: 64px;
       line-height: 64px; }
-      .main .subnav .bi-ul a {
-        color: #FB9CA5;
+      .main .subnav .bi-ul li {
+        display: inline-block;
+        width: 85px;
+        height: 33px;
         font-size: 18px;
-        text-decoration: none; }
-        .main .subnav .bi-ul a li {
-          width: 85px;
-          height: 33px;
+        text-decoration: none;
+        margin-left: 30px;
+        line-height: 33px;
+        text-align: center;
+        border-radius: 25px; }
+        .main .subnav .bi-ul li a {
           display: inline-block;
+          width: 100%;
+          height: 100%;
+          border-radius: 25px;
           text-decoration: none;
           list-style-type: none;
-          line-height: 33px;
-          text-align: center;
-          margin-left: 30px;
-          border-radius: 25px;
-          color: #FB9CA5; }
-        .main .subnav .bi-ul a .j-tips:hover {
+          color: #333; }
+        .main .subnav .bi-ul li.on {
           background-color: #F83244; }
-      .main .subnav .bi-ul .o-direction {
-        display: inline-block;
-        width: 10px;
-        height: 10px;
-        background-image: url(../img/其他-1.png); }
+          .main .subnav .bi-ul li.on a {
+            color: #FB9CA5; }
+        .main .subnav .bi-ul li.j-tips:hover a {
+          background-color: #F83244;
+          color: #FB9CA5; }
+        .main .subnav .bi-ul li .o-direction {
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          background-image: url(../img/其他-1.png); }
     .main .subnav .rang {
       width: 150px;
       height: 64px;
@@ -353,16 +363,18 @@ a:active {
         width: 120px;
         margin-left: 20px;
         display: none;
-        background-color: gray;
-        opacity: .3; }
+        background-color: #fff;
+        border: 1px solid #B4B7BA;
+        border-top: 0px; }
         .main .subnav .rang .rang-tips .rang-tips-sin li {
-          display: inline-block;
+          display: block;
           width: 120px;
-          height: 33px;
+          height: 35px;
           text-align: center;
-          line-height: 33px; }
+          line-height: 35px; }
           .main .subnav .rang .rang-tips .rang-tips-sin li a {
-            color: #FB9CA5; }
+            display: inline-block;
+            color: #B4B7BA; }
     .main .subnav .rang:after {
       content: '';
       clear: both; }
@@ -371,48 +383,62 @@ a:active {
     .main .subnav .other {
       display: inline-block;
       width: 85px;
-      height: 64px;
+      height: 64px !important;
       display: inline-block;
       text-decoration: none;
       list-style-type: none;
-      line-height: 33px;
       text-align: center;
       margin-left: 30px;
-      border-radius: 25px;
+      border-radius: 25px; }
+      .main .subnav .other a {
+        color: #333; }
+    .main .subnav .other:hover {
       color: #FB9CA5; }
     .main .subnav .other:hover .other_sub {
       display: block;
       z-index: 6666px; }
-    .main .subnav .other_sub {
-      width: 1050px;
+    .main .subnav .other-s {
+      width: 1200px;
       margin-top: 64px;
+      background-color: #fff;
       position: absolute;
-      overflow: hidden;
       top: 0;
-      left: 0;
-      display: none; }
-      .main .subnav .other_sub .sub-ul {
-        width: 100%;
-        height: 64px;
-        text-align: left; }
-        .main .subnav .other_sub .sub-ul li {
-          width: 84px;
-          height: 32px;
-          display: inline-block;
-          border-radius: 25px;
-          text-decoration: none;
-          list-style-type: none;
-          margin-right: 15px;
-          line-height: 32px;
-          text-align: center; }
-          .main .subnav .other_sub .sub-ul li a {
+      left: 0; }
+      .main .subnav .other-s .other_sub {
+        width: 1050px;
+        overflow: hidden;
+        display: none;
+        padding: 10px 0 10px 0; }
+        .main .subnav .other-s .other_sub .sub-ul {
+          width: 100%;
+          text-align: left; }
+          .main .subnav .other-s .other_sub .sub-ul li {
             width: 84px;
             height: 32px;
-            font-size: 15px;
+            display: inline-block;
+            border-radius: 25px;
             text-decoration: none;
+            list-style-type: none;
+            border: 1px solid #CCCCCC;
+            margin: 5px 7px  5px 7px;
+            text-align: center;
+            overflow: hidden;
+            font-size: 0; }
+            .main .subnav .other-s .other_sub .sub-ul li a {
+              width: 84px;
+              height: 32px;
+              font-size: 15px;
+              line-height: 32px;
+              display: inline-block;
+              text-decoration: none;
+              color: #333; }
+          .main .subnav .other-s .other_sub .sub-ul .j-tips:hover a {
+            background-color: #F83244;
             color: #FB9CA5; }
-        .main .subnav .other_sub .sub-ul .j-tips:hover {
-          background-color: #F83244; }
+          .main .subnav .other-s .other_sub .sub-ul .on {
+            background-color: #F83244; }
+            .main .subnav .other-s .other_sub .sub-ul .on a {
+              color: #FB9CA5; }
   .main .person {
     padding: 0 4px 35px 4px;
     border-bottom: 1px solid #E8E8E8;
@@ -422,19 +448,20 @@ a:active {
       float: left;
       margin: 35px 26px 0 26px;
       text-align: center; }
-      .main .person .personal img {
-        width: 90px;
-        height: 90px;
-        border-radius: 50%; }
-      .main .person .personal span {
-        display: inline-block;
-        color: #333333;
-        font-size: 20px;
-        font-weight: bold;
-        margin-top: 20px; }
-      .main .person .personal .mony {
-        color: #666666;
-        font-size: 14px; }
+      .main .person .personal a {
+        display: inline-block; }
+        .main .person .personal a img {
+          width: 90px;
+          height: 90px;
+          border-radius: 50%; }
+        .main .person .personal a span {
+          display: inline-block;
+          color: #333333;
+          font-size: 20px;
+          margin-top: 20px; }
+        .main .person .personal a .mony {
+          color: #666666;
+          font-size: 14px; }
   .main .team {
     overflow: hidden;
     padding: 0 0 35px 0;
@@ -443,21 +470,22 @@ a:active {
       width: 160px;
       margin: 35px 47px 0 35px;
       text-align: center; }
-      .main .team .team-sim .team-pic {
-        width: 120px;
-        height: 120px;
-        border-radius: 60px;
-        margin-left: 20px; }
-        .main .team .team-sim .team-pic img {
-          width: 100%;
-          height: 100%; }
-      .main .team .team-sim span {
-        display: inline-block;
-        color: black;
-        font-size: 20px;
-        color: #333333;
-        font-weight: bold;
-        margin-top: 20px; }
+      .main .team .team-sim a {
+        display: inline-block; }
+        .main .team .team-sim a .team-pic {
+          width: 120px;
+          height: 120px;
+          border-radius: 60px;
+          margin-left: 20px; }
+          .main .team .team-sim a .team-pic img {
+            width: 100%;
+            height: 100%; }
+        .main .team .team-sim a span {
+          display: inline-block;
+          color: black;
+          font-size: 20px;
+          color: #333333;
+          margin-top: 20px; }
   .main .subtit {
     height: 70px;
     border-bottom: 1px solid #E8E8E8; }
@@ -485,30 +513,30 @@ a:active {
     overflow: hidden; }
     .main .show .show-per {
       margin: 35px 20px 0 0; }
-      .main .show .show-per .show-per-v {
-        width: 285px;
-        height: 190px; }
-      .main .show .show-per .show-user {
-        width: 285px;
-        height: 54px; }
-        .main .show .show-per .show-user .show-user-pic {
-          width: 35px;
-          height: 35px;
-          border-radius: 17px;
-          float: left;
-          margin-left: 6px;
-          margin-top: 10px; }
-        .main .show .show-per .show-user span {
-          display: inline-block;
-          width: 96px;
-          height: 22px;
-          line-height: 22px;
-          color: #333333;
-          font-size: 16px;
-          float: left;
-          margin-left: 10px;
-          margin-top: 19px; }
-  .main .personal-f {
-    clear: both; }
+      .main .show .show-per a {
+        display: inline-block; }
+        .main .show .show-per a .show-per-v {
+          width: 285px;
+          height: 190px; }
+        .main .show .show-per a .show-user {
+          width: 285px;
+          height: 54px; }
+          .main .show .show-per a .show-user .show-user-pic {
+            width: 35px;
+            height: 35px;
+            border-radius: 17px;
+            float: left;
+            margin-left: 6px;
+            margin-top: 10px; }
+          .main .show .show-per a .show-user span {
+            display: inline-block;
+            width: 96px;
+            height: 22px;
+            line-height: 22px;
+            color: #333333;
+            font-size: 16px;
+            float: left;
+            margin-left: 10px;
+            margin-top: 19px; }
 
 /*# sourceMappingURL=index.css.map */
