@@ -1,3 +1,4 @@
+
 $(function() {
   
     $('.j-tips').click(function(){
@@ -11,4 +12,4 @@ $(function() {
                 else 
                   myVideo.pause(); 
         });
-})
+});
