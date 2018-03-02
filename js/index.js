@@ -13,11 +13,11 @@ $(function() {
         $(".o-direction").css('background-image','url(img/其他-1.png)')
     });
 
-    var myVideo=document.getElementById("video1"); 
-        $('.show-per-v').click(function(){
-            if (myVideo.paused) 
-                  myVideo.play(); 
-                else 
-                  myVideo.pause(); 
-        });
+    // var myVideo=document.getElementById("video1"); 
+    //     $('.show-per-v').click(function(){
+    //         if (myVideo.paused) 
+    //               myVideo.play(); 
+    //             else 
+    //               myVideo.pause(); 
+    //     });
 });

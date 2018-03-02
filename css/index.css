@@ -508,16 +508,34 @@ a:active {
       height: 16px;
       background: url(../img/查看全部.png); }
   .main .show {
+    width: 1220px;
     padding-bottom: 40px;
-    width: 203px;
-    overflow: hidden; }
+    overflow: hidden;
+    margin-left: -10px; }
     .main .show .show-per {
-      margin: 35px 20px 0 0; }
+      width: 285px;
+      float: left;
+      margin: 35px 10px 0 10px; }
       .main .show .show-per a {
         display: inline-block; }
         .main .show .show-per a .show-per-v {
           width: 285px;
-          height: 190px; }
+          height: 190px;
+          background: url("../img/4.png") no-repeat;
+          background-size: 100% 100%;
+          position: relative; }
+          .main .show .show-per a .show-per-v .show-per-v-dark {
+            width: 45px;
+            height: 45px;
+            background: url("../img/播放.png");
+            border-radius: 23px;
+            z-index: 666px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto; }
         .main .show .show-per a .show-user {
           width: 285px;
           height: 54px; }
@@ -537,6 +555,6 @@ a:active {
             font-size: 16px;
             float: left;
             margin-left: 10px;
-            margin-top: 19px; }
+            margin-top: 15px; }
 
 /*# sourceMappingURL=index.css.map */
