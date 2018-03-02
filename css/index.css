@@ -536,6 +536,15 @@ a:active {
             top: 0;
             bottom: 0;
             margin: auto; }
+          .main .show .show-per a .show-per-v .show-per-v-mark {
+            width: 45px;
+            height: 45px;
+            background: url("../img/图片.png");
+            border-radius: 23px;
+            z-index: 666px;
+            position: absolute;
+            right: 8px;
+            top: 8px; }
         .main .show .show-per a .show-user {
           width: 285px;
           height: 54px; }

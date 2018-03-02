@@ -405,6 +405,16 @@
             bottom:0;
             margin: auto;
           }
+          .show-per-v-mark{
+            width:45px;
+            height:45px;
+            background: url('../img/图片.png');
+            border-radius:23px;
+            z-index:666px;
+            position:absolute;
+            right:8px;
+            top:8px;
+          }
         }
       .show-user{
         width:285px;
