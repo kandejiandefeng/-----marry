@@ -2,7 +2,6 @@
 $(function() {
   
     $('.j-tips').click(function(){
-        console.log(this);
         $(this).addClass('on').siblings().removeClass('on');
     });
 
