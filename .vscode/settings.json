@@ -1,0 +1,8 @@
+{
+    "editor.wordWrap": "on",
+    "git.ignoreMissingGitWarning": true,
+    "editor.minimap.enabled": true,
+    "editor.renderWhitespace": "all",
+    "editor.parameterHints": false,
+    "view-in-browser.customBrowser": "chrome"
+}

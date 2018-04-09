@@ -3,115 +3,117 @@
 .header{
   height:120px;
   background-color: #E8E8E8;
+  padding-top: 24px;
   .header-con{
     width:1200px;
-    height:120px;
-    margin:0 auto;
-    position: relative;
-  .user{
-    width:215px;
     height:72px;
-    position:absolute;
-    left:0;
-    top:25px;
-    .user-pic{
-      width:72px;
+    margin:0 auto;
+    overflow: hidden;
+    .user{
+      width:255px;
       height:72px;
-      img{
-        width:100%;
-        height:100%;
-        border-radius:36px;
+      float: left;
+      .user-pic{
+        width:72px;
+        height:72px;
+        float: left;
+        img{
+          width:100%;
+          height:100%;
+          border-radius:36px;
+        }
+      }
+      .use-des{
+        height:72px;
+        padding: 10px 10px;
+        float: left;
+        .user-name{
+          display: block;
+          font-size: 18.5px;
+          letter-spacing: 0.84px;
+        }
+        .user-spe{
+          display: block;
+          margin-top: 5px;
+          font-size: 14.4px;
+          color: #FF9999;
+        }
       }
     }
-    .use-des{
-      height:72px;
-      line-height: 20px;
-      position: absolute;
-      left: 82px;
-      top:20px;
-      .user-name{
-        font-size: 18.5px;
-        letter-spacing: 0.84px;
+    .nav{
+      height: 48px;
+      float: left;
+      margin-top: 12px;
+      a{
+        text-decoration: none;
+        display: block;
+        width: 130px;
+        height: 100%;
+        text-align: center;
+        line-height: 48px;
+        color: black;
+        font-size:22px;
+        float: left;
+        color:#545454;
       }
-      .user-spe{
-        font-size: 14.4px;
-        color: #FF9999;
+      .nav-on{
+        margin-left: 10px;
+        color: #F83244;
+        font-weight: bold;
+      }
+      span{
+        display:block;
+        width: 1px;
+        height: 30px;
+        background-color:#BBBBBB;
+        float: left;
+        margin-top: 10px;
+        margin-left: 5px;
+      }
+      .serch{
+        width: 120px;
+        height:40px;
+        background-color:#F83244;
+        float: left;
+        margin-left:76px;
+        color: #FFFFFF;
+        text-align: center;
+        line-height: 40px;
+        font-size: 20px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .serch-in{
+        display: inline-block;
+        width:405px;
+        height:40px;
+        border: 1px solid #F83244;
+        margin-left: 60px;
+        border-radius:4px;
+          overflow:hidden;
+        position: relative;
+        .inname{
+          width: 365px;
+          height: 40px;
+          overflow:hidden;
+          padding-left:15px;
+        }
+        .inname-serch{
+          height: 40px;
+          width: 80px;
+          background: #F83244;
+          color:#FFFFFF;
+          font-size:18px;
+          line-height:40px;
+          text-align:center;
+          position: absolute;
+          right: 0;
+          top:0;
+          cursor: pointer;
+        }
       }
     }
   }
-  .nav{
-    height: 48px;
-    position: absolute;
-    left:240px;
-    bottom: 30px;
-    a{
-      text-decoration: none;
-      display: inline-block;
-      width: 130px;
-      height: 100%;
-      text-align: center;
-      line-height: 48px;
-      color: black;
-      font-size:22px;
-      float: left;
-      color:#545454;
-    }
-    .nav-on{
-      margin-left: 30px;
-      color: #F83244;
-      font-weight: bold;
-    }
-    span{
-      display:inline-block;
-      width: 1px;
-      height: 30px;
-      background-color:#BBBBBB;
-      float: left;
-      margin-top: 10px;
-      margin-left: 5px;
-    }
-    .serch{
-      width: 120px;
-      height:40px;
-      background-color:#F83244;
-      float: left;
-      margin-left:76px;
-      color: #FFFFFF;
-      text-align: center;
-      line-height: 40px;
-      font-size: 20px;
-      border-radius: 4px;
-    }
-    .serch-in{
-      display: inline-block;
-      width:405px;
-      height:40px;
-      border: 1px solid #F83244;
-      margin-left: 60px;
-      border-radius:4px;
-        overflow:hidden;
-      position: relative;
-      .inname{
-        width: 365px;
-        height: 40px;
-        overflow:hidden;
-        padding-left:15px;
-      }
-      .inname-serch{
-        height: 40px;
-        width: 80px;
-        background: #F83244;
-        color:#FFFFFF;
-        font-size:18px;
-        line-height:40px;
-        text-align:center;
-        position: absolute;
-        right: 0;
-        top:0;
-      }
-    }
-  }
- }
 }
 .main{
   width:1200px;
